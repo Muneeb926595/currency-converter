@@ -91,8 +91,8 @@ const App = () => {
       />
       <Button title="Convert" onPress={handleCalculateTargetCurrency} />
       <View style={styles.result}>
-        <Text>Input : == {inWords(userInput)} </Text>
-        <Text> Output: == {inWords(targetCurrencyValue)}</Text>
+        <Text>Input : == {inWords(userInput?.split('.')[0])} </Text>
+        <Text> Output: == {inWords(targetCurrencyValue?.split('.')[0])}</Text>
       </View>
     </SafeAreaView>
   );
